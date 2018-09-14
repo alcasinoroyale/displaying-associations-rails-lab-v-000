@@ -1,7 +1,7 @@
-<h1>Posts</h1>
+<h1>Songs</h1>
 
 <ul>
-  <% @posts.each do |p| %>
+  <% @songs.each do |p| %>
     <li><%= link_to p.title, post_path(p) %></li>
   <% end %>
 </ul>
