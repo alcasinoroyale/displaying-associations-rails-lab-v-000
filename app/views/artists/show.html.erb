@@ -4,7 +4,7 @@
 
 <h3><%= pluralize(@artist.songs.count, 'Song') %></h3>
 <ul>
-  <% @artist.posts.each do |p| %>
+  <% @artist.songs.each do |p| %>
     <li><%= link_to p.title, post_path(p) %></li>
   <% end %>
 </ul>
